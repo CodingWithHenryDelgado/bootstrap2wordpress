@@ -15,3 +15,8 @@
     <p>&copy; Copyright Brightside Studios Inc.</p>
 </div>
 </footer>
+
+<?php wp_footer(); ?>
+</body>
+
+</html>
