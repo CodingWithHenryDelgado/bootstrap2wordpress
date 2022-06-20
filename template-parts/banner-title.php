@@ -91,27 +91,12 @@
         and we\'ll send you the discount code!</p>' ) ); ?></p>
     </div>
     <div class="col-sm-6">
-        <!-- <form action="index.html" class="" method="post">
-        <div class="row">
-            <div class="col-lg-8">
-                <input name="test" type="text" value="">
-            </div>
-            <div class="col-lg-4">
-                <button class="btn btn-invert m-0" name="button" type="button">Subscribe</button>
-            </div>
-        </div>
-        </form> -->
         <?php
-            $bw2_form_html = get_theme_mod( 'subscribe_form', '<form action="index.html" class="" method="post">
-            <div class="row">
-                <div class="col-lg-8">
-                    <input name="test" type="text" value="">
-                </div>
-                <div class="col-lg-4">
-                    <button class="btn btn-invert m-0" name="button" type="button">Subscribe</button>
-                </div>
-            </div>
-            </form>' );
+            $b2w_form_html = get_theme_mod( 'subscribe_form', '<form action="index.html"
+            class="" method="post"><div class="row"><div class="col-lg-8">
+            <input name="test" type="text" value=""></div>
+            <div class="col-lg-4"><button class="btn btn-invert m-0" name="button" type="button">Subscribe</button>
+            </div></div></form>' );
 
             echo $b2w_form_html;
         ?>
