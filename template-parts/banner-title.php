@@ -24,13 +24,15 @@
 
                 if ( is_page() ) {
 
-                    the_title( '<h1 class="page-title">', '</h1>');
+                    the_title( '<h1 class="page-title">', '</h1>' );
 
                 } elseif ( is_single() ) {
                 ?>
                     <p class="tag-line sub-title"><?php echo get_the_date( 'M d, Y' );
                     ?></p>
                 <?php    
+                the_title('<h1 class="page-title">', '</h1>');
+
                 } elseif ( ! is_front_page() && is_home() ) {
 
                     // in WP settings you can set a page as the Posts Page
