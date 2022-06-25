@@ -1,8 +1,7 @@
 <?php
 /*
-    The main remplate file
 
-    The template for displaying all single posts
+    The template for displaying page
 
     @link https://developer.wordpress.org/themes/basics.template-hierarchy/#single-post
 
@@ -29,24 +28,23 @@
                         );
                         }
             ?>
-            <div class="col-md-8 offset-md-2 overflow-hidden">
-                <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-                    <?php
-                        the_content();
-                    ?>
-                </article>
-            </div>
-            <?php
-            }
-                } else {
-
-                    get_template_part( 'template-parts/content', 'none' );
+                <div class="col-md-8 offset-md-2 overflow-hidden">
+                    <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                        <?php
+                            the_content();
+                        ?>
+                    </article>
+                </div>
+                <?php
                 }
+                    } else {
+
+                        get_template_part( 'template-parts/content', 'none' );
+                    }
             ?>
-        </div>
+        </div>  
     </div>
 </div>
 
-<?php  
-
+<?php
 get_footer();
