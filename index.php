@@ -14,6 +14,8 @@
                             the_post();
                             get_template_part( 'template-parts/content', 'excerpt' );
                         }
+
+                        b2w_pagination();
                     } else {
                         get_template_part( 'template-parts/content', 'none' );
                     }
