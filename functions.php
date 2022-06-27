@@ -89,4 +89,4 @@ function b2w_pagination() {
 
 // Add Customizer Functionality
 
-require get_template_directory(  ). '/includes/customizer-b2w.php';
+require get_template_directory() . '/includes/customizer-b2w.php';
