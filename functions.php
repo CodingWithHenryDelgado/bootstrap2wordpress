@@ -83,7 +83,7 @@ function b2w_pagination() {
         )
     );
     $links = '<nav class="b2w-pagination">' . $links;
-    $links .= '/nav';
+    $links .= '</nav>';
     echo wp_kses_post( $links );
 }
 
